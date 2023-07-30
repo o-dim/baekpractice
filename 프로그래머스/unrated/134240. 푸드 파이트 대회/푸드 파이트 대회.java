@@ -4,9 +4,6 @@ class Solution {
     public String solution(int[] food) {
         StringBuffer answer = new StringBuffer();
         for(int i = 1; i < food.length; i++) {
-            if(food[i] % 2 == 1) {
-                food[i] = food[i] - 1;
-            }
             for(int j = 1; j <= food[i] / 2; j++) {
                 answer.append(String.valueOf(i));
             }
